@@ -8,7 +8,7 @@
 
 if [[ $1 == '-h' || $1 == '--help' ]]
   then
-    echo "Make screenshot, upload it to the http://www.imageshack.us and put link to the clipboard. Useful with keyboard shortcuts.
+    echo "Makes screenshot, uploads it to the http://www.imageshack.us and puts link to clipboard. Useful with keyboard shortcuts.
     
 Usage:
     screenshot

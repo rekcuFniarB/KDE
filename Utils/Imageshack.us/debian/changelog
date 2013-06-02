@@ -1,3 +1,9 @@
+imageshackus (0.1-1ppa0) raring; urgency=low
+
+  * screenshot help edit.
+
+ -- BrainFucker <retratserif@gmail.com>  Sun, 02 Jun 2013 23:45:16 +0400
+
 imageshackus (0.1-0ppa9) raring; urgency=low
 
   * Fixint bin/screenshot permissions.

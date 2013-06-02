@@ -7,7 +7,8 @@ Homepage: https://github.com/rekcuFniarB/KDE/tree/master/Utils/Imageshack.us
 
 Package: imageshackus
 Architecture: any
-Depends: python2.7, libkdecore5, kde-runtime, libkonq5abi1, xclip, python2.7, python-simplejson, python-requests, scrot
+Depends: python2.7, xclip, python2.7, python-simplejson, python-requests, scrot, kde-baseapps-bin | libnotify-bin
+Recommends: libkdecore5, kde-runtime, libkonq5abi1
 Description: It's a service menu for Dolphin (or other file manager for KDE, for example the Krusader) that allow you to upload pictures to the http://umageshack.us .
  After uploading, it places link to the clipboard.
  Also You can use <imageshack.us file.jpg> command from console to upload pictures.

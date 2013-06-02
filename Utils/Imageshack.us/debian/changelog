@@ -1,3 +1,9 @@
+imageshackus (0.1-0ppa9) raring; urgency=low
+
+  * Fixint bin/screenshot permissions.
+
+ -- BrainFucker <retratserif@gmail.com>  Sun, 02 Jun 2013 22:55:19 +0400
+
 imageshackus (0.1-0ppa8) raring; urgency=low
 
   * Trying to fix icons issue while building. Attempt 5: uuencode error: uudecode: stdin: No `begin' line (forgot input file).

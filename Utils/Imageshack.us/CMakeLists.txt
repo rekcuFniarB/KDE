@@ -40,7 +40,7 @@ add_custom_command(OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/imageshack.us" COMMAND sh
 add_custom_target(imageshack.us.bin ALL DEPENDS "${CMAKE_CURRENT_BINARY_DIR}/imageshack.us")
 ## Installing byte-compiled executable: 
 message("Executable will be installed to ${BIN_INSTALL_DIR}/imageshack.us")
-INSTALL(PROGRAMS "${CMAKE_CURRENT_BINARY_DIR}/imageshack.us" DESTINATION bin)
+INSTALL(PROGRAMS "${CMAKE_CURRENT_BINARY_DIR}/imageshack.us" DESTINATION ${BIN_INSTALL_DIR})
 
 ## Generating icons:
 message("Generating icons ...")
@@ -58,7 +58,7 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/icons/hicolor/64x64/apps/ImageShack.pn
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/imageshack.us.desktop DESTINATION ${SERVICES_INSTALL_DIR}/ServiceMenus)
 
 ## Install screenshot script
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/screenshot DESTINATION ${BIN_INSTALL_DIR})
+install(PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/screenshot DESTINATION ${BIN_INSTALL_DIR})
 
 SET(MAJOR_VERSION "0")
 SET(MINOR_VERSION "0")

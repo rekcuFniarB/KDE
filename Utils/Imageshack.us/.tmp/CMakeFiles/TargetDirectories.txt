@@ -1,0 +1,3 @@
+/home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/icons.dir
+/home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/imageshack.us.bin.dir
+/home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/uninstall.dir

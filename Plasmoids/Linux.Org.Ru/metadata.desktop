@@ -1,0 +1,18 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Linux.Org.Ru
+Name[ru]=ЛОР
+Type=Service
+ServiceTypes=Plasma/Applet
+Icon=contact_food_overlay
+X-Plasma-API=python
+X-Plasma-MainScript=code/main.py
+X-KDE-PluginInfo-Author=BrainFucker
+X-KDE-PluginInfo-Email=retratserif@gmail.com
+X-KDE-PluginInfo-Name=Linux.Org.Ru
+X-KDE-PluginInfo-Version=0.0.1
+X-KDE-PluginInfo-Website=http://utnubuk.info/
+X-KDE-PluginInfo-Category=Examples
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true

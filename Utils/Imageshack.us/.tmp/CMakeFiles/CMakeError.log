@@ -1,0 +1,174 @@
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1910715766/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1910715766.dir/build.make CMakeFiles/cmTryCompileExec1910715766.dir/build
+make[1]: Вход в каталог `/media/G/BFHome/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1910715766.dir/CheckSymbolExists.c.o
+/usr/lib/ccache/cc   -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec1910715766.dir/CheckSymbolExists.c.o   -c /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c: В функции «main»:
+/home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: ошибка: «Q_WS_WIN» undeclared (first use in this function)
+/home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: замечание: each undeclared identifier is reported only once for each function it appears in
+make[1]: Выход из каталога `/media/G/BFHome/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1910715766.dir/CheckSymbolExists.c.o] Ошибка 1
+make: *** [cmTryCompileExec1910715766/fast] Ошибка 2
+
+File /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec781935394/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec781935394.dir/build.make CMakeFiles/cmTryCompileExec781935394.dir/build
+make[1]: Вход в каталог `/media/G/BFHome/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec781935394.dir/CheckSymbolExists.c.o
+/usr/lib/ccache/cc   -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec781935394.dir/CheckSymbolExists.c.o   -c /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c: В функции «main»:
+/home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: ошибка: «Q_WS_QWS» undeclared (first use in this function)
+/home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: замечание: each undeclared identifier is reported only once for each function it appears in
+make[1]: Выход из каталога `/media/G/BFHome/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec781935394.dir/CheckSymbolExists.c.o] Ошибка 1
+make: *** [cmTryCompileExec781935394/fast] Ошибка 2
+
+File /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec455371321/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec455371321.dir/build.make CMakeFiles/cmTryCompileExec455371321.dir/build
+make[1]: Вход в каталог `/media/G/BFHome/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec455371321.dir/CheckSymbolExists.c.o
+/usr/lib/ccache/cc   -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec455371321.dir/CheckSymbolExists.c.o   -c /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c: В функции «main»:
+/home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: ошибка: «Q_WS_MAC» undeclared (first use in this function)
+/home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: замечание: each undeclared identifier is reported only once for each function it appears in
+make[1]: Выход из каталога `/media/G/BFHome/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec455371321.dir/CheckSymbolExists.c.o] Ошибка 1
+make: *** [cmTryCompileExec455371321/fast] Ошибка 2
+
+File /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1421302539/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1421302539.dir/build.make CMakeFiles/cmTryCompileExec1421302539.dir/build
+make[1]: Вход в каталог `/media/G/BFHome/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1421302539.dir/CheckSymbolExists.c.o
+/usr/lib/ccache/cc    -o CMakeFiles/cmTryCompileExec1421302539.dir/CheckSymbolExists.c.o   -c /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1421302539
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1421302539.dir/link.txt --verbose=1
+/usr/lib/ccache/cc         CMakeFiles/cmTryCompileExec1421302539.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1421302539 -rdynamic 
+CMakeFiles/cmTryCompileExec1421302539.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0xa): undefined reference to `pthread_create'
+collect2: ошибка: выполнение ld завершилось с кодом возврата 1
+make[1]: Выход из каталога `/media/G/BFHome/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1421302539] Ошибка 1
+make: *** [cmTryCompileExec1421302539/fast] Ошибка 2
+
+File /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec455604637/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec455604637.dir/build.make CMakeFiles/cmTryCompileExec455604637.dir/build
+make[1]: Вход в каталог `/media/G/BFHome/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec455604637.dir/CheckFunctionExists.c.o
+/usr/lib/ccache/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec455604637.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec455604637
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec455604637.dir/link.txt --verbose=1
+/usr/lib/ccache/cc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec455604637.dir/CheckFunctionExists.c.o  -o cmTryCompileExec455604637 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: ошибка: выполнение ld завершилось с кодом возврата 1
+make[1]: Выход из каталога `/media/G/BFHome/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec455604637] Ошибка 1
+make: *** [cmTryCompileExec455604637/fast] Ошибка 2
+
+
+Performing C++ SOURCE FILE Test _OFFT_IS_64BIT failed with the following output:
+Change Dir: /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3939307378/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3939307378.dir/build.make CMakeFiles/cmTryCompileExec3939307378.dir/build
+make[1]: Вход в каталог `/media/G/BFHome/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3939307378.dir/src.cxx.o
+/usr/lib/ccache/c++    -D_OFFT_IS_64BIT   -o CMakeFiles/cmTryCompileExec3939307378.dir/src.cxx.o -c /home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/src.cxx
+/home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/src.cxx:9:38: предупреждение: величина сдвига влево больше или равна ширине данного типа [по умолчанию включена]
+/home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/src.cxx:9:62: предупреждение: величина сдвига влево больше или равна ширине данного типа [по умолчанию включена]
+/home/brainfucker/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp/src.cxx:9:161: ошибка: размер массива «off_t_is_large» отрицательный
+make[1]: Выход из каталога `/media/G/BFHome/Projects/KDE/Utils/Imageshack.us/.tmp/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3939307378.dir/src.cxx.o] Ошибка 1
+make: *** [cmTryCompileExec3939307378/fast] Ошибка 2
+
+Source file was:
+
+#include <sys/types.h>
+ /* Check that off_t can represent 2**63 - 1 correctly.
+    We can't simply define LARGE_OFF_T to be 9223372036854775807,
+    since some C++ compilers masquerading as C compilers
+    incorrectly reject 9223372036854775807.  */
+#define LARGE_OFF_T (((off_t) 1 << 62) - 1 + ((off_t) 1 << 62))
+
+  int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721 && LARGE_OFF_T % 2147483647 == 1) ? 1 : -1];
+  int main() { return 0; }
+

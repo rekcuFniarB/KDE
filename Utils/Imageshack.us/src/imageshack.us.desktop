@@ -1,0 +1,13 @@
+[Desktop Action ImageShack]
+Exec=imageshack.us %f
+Icon=ImageShack
+Name=Upload to Imageshack.us
+Name[ru]=Загрузить на Imageshack.us
+
+[Desktop Entry]
+Actions=ImageShack;
+MimeType=image/*;
+ServiceTypes=
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+X-KDE-Submenu=

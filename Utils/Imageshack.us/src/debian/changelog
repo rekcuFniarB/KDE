@@ -1,3 +1,15 @@
+imageshackus (0.1-0ppa3) raring; urgency=low
+
+  * Switch to dpkg-source 3.0 (quilt) format
+
+ -- BrainFucker <retratserif@gmail.com>  Sun, 02 Jun 2013 16:07:42 +0400
+
+imageshackus (0.1-0ppa2) raring; urgency=low
+
+  * Logo fix.
+
+ -- BrainFucker <retratserif@gmail.com>  Sun, 02 Jun 2013 15:42:32 +0400
+
 imageshackus (0.1-0ppa1) raring; urgency=low
 
   * Depencies fix.

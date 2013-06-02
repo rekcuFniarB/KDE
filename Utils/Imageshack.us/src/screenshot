@@ -27,24 +27,4 @@ fi
 
 cd /tmp
 
-# Flashtux
-# Link=`scrot "$@" -q 30 -e 'curl -s -F "form=1" -F "MAX_FILE_SIZE=5242880" -F "postimg=1" -F "upload=UPLOAD!" -F "filename=@$f;type=image/png" -A "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:12.0) Gecko/20100101 Firefox/12.0" -w %{redirect_url} -e http://img.flashtux.org/ http://img.flashtux.org/index.php && rm $f'`
-
-# Itmages
-# Link=`scrot "$@" -q 30 -e 'curl -s -F "yt0= Загрузить " -F "picture[]=@$f;type=image/png" -A "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:12.0) Gecko/20100101 Firefox/12.0" -w %{redirect_url} -e http://itmages.ru/ http://itmages.ru/add && rm $f'`
-# Link="$(wget "$Link" -U "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:12.0) Gecko/20100101 Firefox/12.0" -q -O - | grep "h_" -m 1| ssed -R 's/.*(http.*?)\[\/.*/\1/g')"
-
-scrot "$@" -q 30 -e 'imageshack.us $f; rm $f' '/dev/shm/Screenshot_%s.png'
-
-# Editing link to match direct link to the picture
-# Link=${Link//org\/img/org\/upload\/img}
-
-# Put link to the clipboard
-# echo -n $Link|xclip
-
-# Inform when link is ready to paste.
-# if [[ $(which kdialog) ]]
-#   then kdialog --passivepopup 'Screenshot done!' 3
-# elif [[ $(which notify-send) ]]
-#   then notify-send -t 3000 'Screenshot done!'
-# fi
+exec scrot "$@" -q 30 -e 'imageshack.us $f; rm $f' '/dev/shm/Screenshot_%s.png'

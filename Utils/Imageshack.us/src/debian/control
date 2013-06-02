@@ -2,8 +2,7 @@ Source: imageshackus
 Section: universe/kde
 Priority: optional
 Maintainer: BrainFucker <retratserif@gmail.com>
-Build-Depends: cmake, python2.7, build-essential, imagemagick, wget, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12),
- kdelibs5-dev (>= 4:4.4.5)
+Build-Depends: cmake, python2.7, build-essential, imagemagick, wget, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12), kdelibs5-dev (>= 4:4.4.5)
 Homepage: https://github.com/rekcuFniarB/KDE/tree/master/Utils/Imageshack.us
 
 Package: imageshackus

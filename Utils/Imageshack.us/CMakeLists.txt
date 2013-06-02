@@ -35,8 +35,8 @@ message("")
 
 ## Building executable:
 message("Building executable ${BIN_INSTALL_DIR}/imageshack.us ...")
-add_custom_command(OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/imageshack.us" COMMAND sh "${CMAKE_CURRENT_SOURCE_DIR}/src/compilepy.sh" "${CMAKE_CURRENT_SOURCE_DIR}/src/imageshack.us.py" "${CMAKE_CURRENT_BINARY_DIR}/imageshack.us")
-# add_executable("${CMAKE_CURRENT_BINARY_DIR}/imageshack.us" "${CMAKE_CURRENT_SOURCE_DIR}/src/imageshack.us.py")
+add_custom_command(OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/imageshack.us" COMMAND sh "${CMAKE_CURRENT_SOURCE_DIR}/compilepy.sh" "${CMAKE_CURRENT_SOURCE_DIR}/imageshack.us.py" "${CMAKE_CURRENT_BINARY_DIR}/imageshack.us")
+# add_executable("${CMAKE_CURRENT_BINARY_DIR}/imageshack.us" "${CMAKE_CURRENT_SOURCE_DIR}/imageshack.us.py")
 add_custom_target(imageshack.us.bin ALL DEPENDS "${CMAKE_CURRENT_BINARY_DIR}/imageshack.us")
 ## Installing byte-compiled executable: 
 message("Executable will be installed to ${BIN_INSTALL_DIR}/imageshack.us")
@@ -44,7 +44,7 @@ INSTALL(PROGRAMS "${CMAKE_CURRENT_BINARY_DIR}/imageshack.us" DESTINATION bin)
 
 ## Generating icons:
 message("Generating icons ...")
-add_custom_command(OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/icons" COMMAND sh "${CMAKE_CURRENT_SOURCE_DIR}/src/iconsgen.sh" "${CMAKE_CURRENT_SOURCE_DIR}" "${CMAKE_CURRENT_BINARY_DIR}")
+add_custom_command(OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/icons" COMMAND sh "${CMAKE_CURRENT_SOURCE_DIR}/iconsgen.sh" "${CMAKE_CURRENT_SOURCE_DIR}" "${CMAKE_CURRENT_BINARY_DIR}")
 add_custom_target(icons ALL DEPENDS "${CMAKE_CURRENT_BINARY_DIR}/icons")
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/icons/hicolor/16x16/apps/ImageShack.png DESTINATION "${ICON_INSTALL_DIR}/hicolor/16x16/apps")
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/icons/hicolor/22x22/apps/ImageShack.png DESTINATION "${ICON_INSTALL_DIR}/hicolor/22x22/apps")
@@ -55,10 +55,10 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/icons/hicolor/64x64/apps/ImageShack.pn
 
 
 ## Install the service menu:
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/imageshack.us.desktop DESTINATION ${SERVICES_INSTALL_DIR}/ServiceMenus)
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/imageshack.us.desktop DESTINATION ${SERVICES_INSTALL_DIR}/ServiceMenus)
 
 ## Install screenshot script
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/screenshot DESTINATION ${BIN_INSTALL_DIR})
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/screenshot DESTINATION ${BIN_INSTALL_DIR})
 
 SET(MAJOR_VERSION "0")
 SET(MINOR_VERSION "0")

@@ -13,12 +13,12 @@ binary: binary-indep binary-arch
 
 binary-indep:
 	# nothing to be done
-
-binary-arch:
 	cd $(BUILDDIR); cmake -P cmake_install.cmake
 	mkdir debian/tmp/DEBIAN
 	dpkg-gencontrol
 	dpkg --build debian/tmp ..
+binary-arch:
+
 
 # firstly called by launchpad
 clean:

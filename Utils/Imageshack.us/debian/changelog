@@ -1,3 +1,21 @@
+imageshackus (0.1-0ppa8) raring; urgency=low
+
+  * Trying to fix icons issue while building. Attempt 5: uuencode error: uudecode: stdin: No `begin' line (forgot input file).
+
+ -- BrainFucker <retratserif@gmail.com>  Sun, 02 Jun 2013 20:45:53 +0400
+
+imageshackus (0.1-0ppa7) raring; urgency=low
+
+  * Trying to fix icons issue while building. Attempt 4: moved sources from src.
+
+ -- BrainFucker <retratserif@gmail.com>  Sun, 02 Jun 2013 20:27:57 +0400
+
+imageshackus (0.1-0ppa6) raring; urgency=low
+
+  * Trying to fix icons issue while building. Attempt 3.
+
+ -- BrainFucker <retratserif@gmail.com>  Sun, 02 Jun 2013 18:43:35 +0400
+
 imageshackus (0.1-0ppa5) raring; urgency=low
 
   * Trying to fix icons issue while building. Uuencoded icon file.

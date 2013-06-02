@@ -2,14 +2,14 @@ Source: imageshackus
 Section: universe/kde
 Priority: optional
 Maintainer: BrainFucker <retratserif@gmail.com>
-Build-Depends: cmake, python2.7, build-essential, imagemagick, wget, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12), kdelibs5-dev (>= 4:4.4.5), sharutils
+Build-Depends: cmake, python2.7, imagemagick, wget, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12), kdelibs5-dev (>= 4:4.4.5), sharutils
 Homepage: https://github.com/rekcuFniarB/KDE/tree/master/Utils/Imageshack.us
 
 Package: imageshackus
 Architecture: all
 Depends: python2.7, xclip, python2.7, python-simplejson, python-requests, scrot, kde-baseapps-bin | libnotify-bin
 Recommends: libkdecore5, kde-runtime
-Description: It's a service menu for Dolphin (or other file manager for KDE, for example the Krusader) that allow you to upload pictures to the http://umageshack.us .
+Description: It's a service menu for Dolphin (or other file manager for KDE, for example the Krusader) that allows you to upload pictures to the http://umageshack.us .
  After uploading, it places link to the clipboard.
  Also You can use <imageshack.us file.jpg> command from console to upload pictures.
  Package also contains screenshot command line util, which makes the screenshot, uploads it to the imagemagick.us and places link to the clipboard. It's very useful with keyboard shortcuts.

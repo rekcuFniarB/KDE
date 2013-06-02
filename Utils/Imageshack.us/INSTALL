@@ -1,0 +1,5 @@
+To manually install copy src/screenshot and src/imageshack.us.py files to /usr/bin or other bin directory from $PATH,
+copy imageshack.us.desktop to /usr/share/kde4/services/ServiceMenus/ or to ~/.kde/share/kde4/services/ServiceMenus/
+And satisfy depensies: scrot, xlip, notify-send (or kde-base-apps-bin).
+
+For Debian and Ubuntu You can build a deb package with cpack or standard Debian way.

@@ -44,7 +44,7 @@ INSTALL(PROGRAMS "${CMAKE_CURRENT_BINARY_DIR}/imageshack.us" DESTINATION bin)
 
 ## Generating icons:
 message("Generating icons ...")
-add_custom_command(OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/icons" COMMAND sh "${CMAKE_CURRENT_SOURCE_DIR}/src/iconsgen.sh" "${CMAKE_CURRENT_BINARY_DIR}")
+add_custom_command(OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/icons" COMMAND sh "${CMAKE_CURRENT_SOURCE_DIR}/src/iconsgen.sh" "${CMAKE_CURRENT_SOURCE_DIR}" "${CMAKE_CURRENT_BINARY_DIR}")
 add_custom_target(icons ALL DEPENDS "${CMAKE_CURRENT_BINARY_DIR}/icons")
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/icons/hicolor/16x16/apps/ImageShack.png DESTINATION "${ICON_INSTALL_DIR}/hicolor/16x16/apps")
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/icons/hicolor/22x22/apps/ImageShack.png DESTINATION "${ICON_INSTALL_DIR}/hicolor/22x22/apps")

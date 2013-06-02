@@ -1,3 +1,9 @@
+imageshackus (0.1-0ppa1) raring; urgency=low
+
+  * Depencies fix.
+
+ -- BrainFucker <retratserif@gmail.com>  Sun, 02 Jun 2013 14:33:09 +0400
+
 imageshackus (0.1-0ppa0) raring; urgency=low
 
   * Initial.

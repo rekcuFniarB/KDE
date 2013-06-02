@@ -8,4 +8,4 @@ After uploading, it places link to the clipboard.
 Also You can use `imageshack.us file.jpg` command from console to upload pictures.
 
 Package also contains `screenshot` command line util, which makes a screenshot, uploads it to the [imageshack.us](http://imageshack.us) and places link to the clipboard. It's very useful with keyboard shortcuts (set them in the KDE systemsettings).
-Usage: `screenshot` for taking screenshot of full screen, `screenshot -ub` for active window anc `screenshot -s` for region of the screen. Also accepts other scrot args.
+Usage: `screenshot` for taking screenshot of full screen, `screenshot -ub` for active window and `screenshot -s` for region of the screen. Also accepts other scrot args.

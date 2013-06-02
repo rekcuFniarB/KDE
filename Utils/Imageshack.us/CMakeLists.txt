@@ -57,6 +57,8 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/icons/hicolor/64x64/apps/ImageShack.pn
 ## Install the service menu:
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/imageshack.us.desktop DESTINATION ${SERVICES_INSTALL_DIR}/ServiceMenus)
 
+## Install screenshot script
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/screenshot DESTINATION ${BIN_INSTALL_DIR})
 
 SET(MAJOR_VERSION "0")
 SET(MINOR_VERSION "0")
@@ -82,7 +84,7 @@ SET(CPACK_SOURCE_PACKAGE_FILE_NAME "${CMAKE_PROJECT_NAME}_${MAJOR_VERSION}.${MIN
 #SET(CPACK_DEBIAN_PACKAGE_DEPENDS " kate , plasma-desktop, libc6 (>= 2.1.3) ")
 
 #dependencies for this service menu
-SET(CPACK_DEBIAN_PACKAGE_DEPENDS "libkdecore5, kde-runtime, libkonq5abi1, xclip, python2.7, python-simplejson, python-requests")
+SET(CPACK_DEBIAN_PACKAGE_DEPENDS "libkdecore5, kde-runtime, libkonq5abi1, xclip, python2.7, python-simplejson, python-requests, scrot")
  
 SET(CPACK_DEBIAN_PACKAGE_PRIORITY "optional")
 SET(CPACK_DEBIAN_PACKAGE_SECTION "kde")

@@ -1,0 +1,50 @@
+#!/bin/bash
+
+##   Makes screenshot of the screen or a window, uploads it to the img.fhashtux.org and puts link to the clipboard.
+##   Depencies: scrot, xclip, curl and kdialog (or notify-send instead).
+## 
+##   Written by BrainFucker ( https://github.com/rekcuFniarB/Bash-scripts ).
+##   This script is licensed under the GPL3 license.
+
+if [[ $1 == '-h' || $1 == '--help' ]]
+  then
+    echo "Make screenshot, upload it to the http://www.imageshack.us and put link to the clipboard. Useful with keyboard shortcuts.
+    
+Usage:
+    screenshot
+        Makes screenshot of the whole screen.
+    screenshot -ub
+        Makes screenshot of the current window.
+    screenshot -h
+    screenshot --help
+        Displays this help.
+    Also accepts scrot options.
+
+Written by BrainFucker ( https://github.com/rekcuFniarB/Bash-scripts ).
+This script is licensed under the GPLv3 license."
+    exit 0
+fi
+
+cd /tmp
+
+# Flashtux
+# Link=`scrot "$@" -q 30 -e 'curl -s -F "form=1" -F "MAX_FILE_SIZE=5242880" -F "postimg=1" -F "upload=UPLOAD!" -F "filename=@$f;type=image/png" -A "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:12.0) Gecko/20100101 Firefox/12.0" -w %{redirect_url} -e http://img.flashtux.org/ http://img.flashtux.org/index.php && rm $f'`
+
+# Itmages
+# Link=`scrot "$@" -q 30 -e 'curl -s -F "yt0= Загрузить " -F "picture[]=@$f;type=image/png" -A "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:12.0) Gecko/20100101 Firefox/12.0" -w %{redirect_url} -e http://itmages.ru/ http://itmages.ru/add && rm $f'`
+# Link="$(wget "$Link" -U "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:12.0) Gecko/20100101 Firefox/12.0" -q -O - | grep "h_" -m 1| ssed -R 's/.*(http.*?)\[\/.*/\1/g')"
+
+scrot "$@" -q 30 -e 'imageshack.us $f; rm $f' '/dev/shm/Screenshot_%s.png'
+
+# Editing link to match direct link to the picture
+# Link=${Link//org\/img/org\/upload\/img}
+
+# Put link to the clipboard
+# echo -n $Link|xclip
+
+# Inform when link is ready to paste.
+# if [[ $(which kdialog) ]]
+#   then kdialog --passivepopup 'Screenshot done!' 3
+# elif [[ $(which notify-send) ]]
+#   then notify-send -t 3000 'Screenshot done!'
+# fi

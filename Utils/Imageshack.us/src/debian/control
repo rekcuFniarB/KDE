@@ -3,7 +3,7 @@ Section: universe/kde
 Priority: optional
 Maintainer: BrainFucker <retratserif@gmail.com>
 Build-Depends: cmake, python2.7, build-essential, imagemagick, wget
-Homepage: http://utnubuk.info
+Homepage: https://github.com/rekcuFniarB/KDE/tree/master/Utils/Imageshack.us
 
 Package: imageshackus
 Architecture: any
@@ -12,3 +12,4 @@ Description: It's a service menu for Dolphin (or other file manager for KDE, for
  After uploading, it places link to the clipboard.
  Also You can use <imageshack.us file.jpg> command from console to upload pictures.
  Package also contains screenshot command line util, which makes the screenshot, uploads it to the imagemagick.us and places link to the clipboard. It's very useful with keyboard shortcuts.
+ https://github.com/rekcuFniarB/KDE/tree/master/Utils/Imageshack.us
